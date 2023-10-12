@@ -1,0 +1,127 @@
+// HOW ELEMENTS ARE LOCATED USING SELENIUM WEBDRIVER
+
+Step 1: Using ID as a locator
+•	Open Eclipse
+•	Find a web element using Locator ID
+
+a.	Syntax: id = id of the element
+b.	Example: driver.findElement(By.id(“Email”));
+
+Step 2: Using class name as a locator
+•	Find a web element using Locator ClassName
+
+a.	Syntax: class = ClassName of the element
+b.	Example: driver.findElement(By.class(“classname”));
+
+Step 3: Using Name as a Locator
+•	Find a web element using Locator Name
+
+a.	Syntax: name = Name of the element
+b.	Example: driver.findElement(By.name(“name”));
+
+Step 4: Using LinkText as a Locator
+•	Find a web element using Locator Link Text
+
+a.	Syntax: link = partialLink of the element
+b.	Example: driver.findElement(By.partialLinkText(“plink”));
+
+Step 5: Using Xpath as a Locator
+•	Find a web element using Locator Xpath
+•	Xpath can be created in two ways:
+
+a.	Relative Xpath
+•	Syntax: relativeXpath: //*[@class=’relativexpath’]
+
+•	Example: driver.findElement(By.xpath(“//*[@class=’relativexpath’]”)); 
+
+b.	Absolute Xpath
+•	Syntax: absoluteXpath : html/body/div[1]/div[1]/div/h4[1]/b
+
+•	Example:driver.findElement(By.xpath(“html/body/div[1]/div[1]/div/h4[1]/b”));
+
+Step 6: Using Xpath as a CSS Selector
+•	CSS selector have many formats, namely
+
+a.	Tag and ID
+•	Syntax: “css = tag#id”
+
+b.	Tag and Class
+•	Syntax: “css = tag.class”
+
+c.	Tag and Attribute
+•	Syntax: “css = tag[attribute=value]”
+
+d.	Tag, Class and Attribute
+•	Syntax: “tag.class[attribute=value]”
+
+e.	Inner text
+•	Syntax: “css = tag.contains(“innertext”)”
+
+Step 7: Using Xpath for handling complex and dynamic elements
+•	Dynamic Xpath has many formats, namely
+
+a.	Contains();
+
+Syntax: “xpath = //*[contains(text(),’text’)]
+
+b.	Using OR and AND
+
+Syntax: xpath=//*[@type=’submit’ or @name=’btnReset’]
+
+c.	Start-with function
+
+Syntax: xpath= //label[starts-with(@id,’message’)]
+
+d.	Text();
+
+Syntax: xpath = //td[text()=’UserID’]
+
+e.	Following
+
+Syntax: xpath= //*[@type=’text’]//following::input
+
+f.	Preceding
+
+Syntax: xpath = //*[@type=’text’]//preceding::input
+
+g.	Following-sibling
+
+Syntax: xpath = //*[@type=’submit’]//preceding::input
+
+	
+Demonstrate By Using XPATH
+
+
+package seleniumScripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FindElementsDemoXpath {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.ironspider.ca/forms/checkradio.htm");
+		
+		// the below xpath used will return a list 6 tags, in which if we want to have a single tag selected 
+		// we use get(index number) method
+		// for this use case we also use findElements()
+		
+		driver.findElements(By.xpath("//input[@name='color']")).get(1).click();
+		
+		driver.findElements(By.xpath("//input[@name='color']")).get(3).click();
+		
+		driver.findElements(By.xpath("//input[@name='color']")).get(4).click();
+		
+		
+
+	}
+
+}

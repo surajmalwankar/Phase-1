@@ -1,0 +1,48 @@
+FEATURES OF SELENIUM
+
+Open-Source: 
+
+Selenium is a freeware and a portable tool. 
+It has no upfront direct costs involved. 
+The tool can be freely downloaded and the support for it is freely available,
+as it is community-based.
+
+Supports languages:
+Selenium supports a range of languages, including Java, Perl, Python, C#, Ruby, Groovy, Java Script, etc.
+It has its own script, but it doesn’t limit it to that language. It can work with various languages and whatever the developers/testers are comfortable with.
+
+Supports Operating Systems:
+Selenium operates across and supports multiple Operating Systems, (OS) like Windows, Mac, Linux, UNIX, etc.
+With Selenium Suite of solutions, a tailored testing suite can be created over any platform and then executed on another one. For instance, you can create 
+test cases using Windows OS and run it with ease on a Linux-based system.
+
+Supports multiple browsers:
+Selenium provides support across multiple browsers, namely, Internet Explorer, Chrome, Firefox, Opera, Safari, etc. 
+This becomes highly resourceful while executing tests and testing it across various browsers simultaneously.
+
+Tests across devices
+Selenium Test Automation can be implemented for mobile web application automation on Android, IPhone, and Blackberry.
+This can help in generating necessary results and addresses issues on a continuous basis.
+
+Constant updates
+Selenium support is community-based and active community support enables constant updates and upgrades.
+These upgrades are readily available and do not require specific training. This makes Selenium resourceful and cost-effective as well.
+
+Loaded Selenium Suites
+Selenium is not just a singular tool or utility, it is a loaded package of various testing tools and so is referred to as a Suite. 
+ Each tool is designed to cater to different testing needs and requirements of test environments.
+
+Ease of implementation
+Selenium offers a user-friendly interface that helps create and execute tests easily and effectively. 
+Its open-source features help users to script their own extensions which makes it easy to develop customized actions and even manipulate at an advanced level. 
+Tests run directly across browsers and users can watch while the tests are being executed. Additionally, Selenium’s reporting capabilities are one of the reasons for being chosen, 
+as it allows testers to extract results and take follow-up actions.
+
+Reusability and Add-ons
+Selenium Test Automation Framework uses scripts that can be tested directly across multiple browsers. Concurrently, 
+ it is possible to execute multiple tests with Selenium, as it covers almost all aspects of functional testing by implementing add-on tools that broaden the scope of testing.
+
+
+
+
+
